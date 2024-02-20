@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>adjacent siblings</title>
+    <style>
+     div + p {
+        background-color: red;
+      }
+    </style>
+  </head>
+
+  <!--  in adjacent sibling selector we use + symbol and in this context the result is effect immediately sibling-->
+  <body>
+    <p>para1</p>
+    <div><p>para1+1</p></div>
+    <p>para2</p>
+    <p>para3</p>
+    <p>para4</p>
+    <p>para5</p>
+    </body>
+</html>

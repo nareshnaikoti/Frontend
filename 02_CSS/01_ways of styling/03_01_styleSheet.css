@@ -1,0 +1,32 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+  }
+  
+.c {
+    text-decoration: dashed;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-right: 90%;
+    text-align: center;
+    background-color: rgb(8, 103, 8);
+    padding: 10px;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+
+  .b,.j,.t,.a{
+    text-decoration: dashed;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-right: 90%;
+    text-align: center;
+    background-color: rgb(8, 103, 8);
+    padding: 10px;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
