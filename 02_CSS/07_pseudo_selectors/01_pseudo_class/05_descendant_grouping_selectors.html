@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Descendant_grouping_pseudo_class_selectors</title>
+    <style>
+      ul li:first-child,
+      ol li:first-child {
+        background-color: green;
+        border: 20px solid black;
+        border-radius: 15px;
+      }
+
+      p,
+      b,
+      ul li:last-child,
+      ol li:last-child {
+        background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>welcome to cascading style sheets</p>
+    </div>
+
+    <div>
+      <h2>iam anguar <b>developer</b></h2>
+    </div>
+    <ul>
+      <li>01. html</li>
+      <li>02. css</li>
+      <li>03. bootstrap</li>
+      <li>04. javascript</li>
+      <li>05. typescript</li>
+      <li>06. angular</li>
+    </ul>
+
+    <ol>
+      <li>html</li>
+      <li>css</li>
+      <li>bootstrap</li>
+      <li>javascript</li>
+      <li>typescript</li>
+      <li>angular</li>
+    </ol>
+  </body>
+</html>

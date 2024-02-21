@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tables</title>
+
+    <style>
+      td,
+      th,
+      table {
+        border: 2px solid blue;
+        padding: 1px;
+        border-collapse: collapse;
+      }
+
+      table tr:first-child{
+        background-color: green;
+      }
+      table td:first-child{
+        color:yellow
+      }
+
+      table tr:hover{
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <caption>
+        html tables
+      </caption>
+      <thead>
+        <tr>
+          <th>Sl.No.</th>
+          <th>Name</th>
+          <th>batch-code</th>
+          <th>amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>01</td>
+          <td>naresh</td>
+          <td>001</td>
+          <td>200000</td>
+        </tr>
+
+        <tr>
+          <td>01</td>
+          <td>rajesh</td>
+          <td>002</td>
+          <td>600000</td>
+        </tr>
+        <tr>
+          <td>03</td>
+          <td>babu</td>
+          <td>003</td>
+          <td>60000</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>thank you</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
