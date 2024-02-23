@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unique Mobile Number Validation</title>
+    <script>
+    function validateUniqueMobileNumbers() {
+        // Get input values
+        var number1 = document.getElementById("number1").value.trim();
+        var number2 = document.getElementById("number2").value.trim();
+        var number3 = document.getElementById("number3").value.trim();
+        
+        // Regular expression for mobile number format
+        var mobileRegex = /^[6-9]\d{9}$/;
+        
+        // Check if all numbers are valid
+        var isValidNumber1 = mobileRegex.test(number1);
+        var isValidNumber2 = mobileRegex.test(number2);
+        var isValidNumber3 = mobileRegex.test(number3);
+        
+        // Check if all numbers are unique
+        var areNumbersUnique = new Set([number1, number2, number3]).size === 3;
+        
+        // Display validation result
+        var resultElement = document.getElementById("result");
+        if (isValidNumber1 && isValidNumber2 && isValidNumber3 && areNumbersUnique) {
+            resultElement.textContent = "All three mobile numbers are valid and unique.";
+        } else {
+            resultElement.textContent = "Please enter three valid and unique mobile numbers.";
+        }
+    }
+    </script>
+    </head>
+    <body>
+    <h2>Unique Mobile Number Validation</h2>
+    <form onsubmit="event.preventDefault(); validateUniqueMobileNumbers();">
+        <label for="number1">Mobile Number 1:</label>
+        <input type="tel" id="number1" pattern="[6-9]\d{9}" required><br><br>
+        
+        <label for="number2">Mobile Number 2:</label>
+        <input type="tel" id="number2" pattern="[6-9]\d{9}" required><br><br>
+        
+        <label for="number3">Mobile Number 3:</label>
+        <input type="tel" id="number3" pattern="[6-9]\d{9}" required><br><br>
+        
+        <button type="submit">Validate</button>
+    </form>
+    <div id="result"></div>
+    </body>
+    </html>
+    
+
+
+</body>
+</html>
